@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+    <style>
+        label{
+            display: block;
+            margin: 12px;
+            font-size: 1.5rem;
+
+        }
+        input, select{
+            font-size: 1.5rem;
+        }
+        input:focus-visible{
+            outline: 2px solid black;
+            outline-offset: 2px;
+            background-color: yellow;
+        }
+        label:focus-within{
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes - Focus</h1>
+    <p>:focus - :focus-within - :focus-visible</p>
+
+    <form>
+        <p>Faça seu pedido</p>
+        <label>
+            Nome completo
+            <input name="nome" type="text">
+        </label>
+        <label>
+            sabor do sorvete
+            <select name="sabor">
+                <option value="chocolate">chocolate</option>
+                <option value="morango">morango</option>
+
+            </select>
+        </label>
+    </form>
+
+</body>
+</html>
