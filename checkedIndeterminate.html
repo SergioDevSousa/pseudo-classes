@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIO CSS</title>
+    <style>
+        input{
+            accent-color: #084708;
+        }
+        input:checked + label{
+            box-shadow: 0 0 5px 2px green;
+        }
+        option:checked{
+            color: red;
+            font-weight: bold;
+        }
+        input[type="radio"]{
+            accent-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes | :checked e :indeterminate</h1>
+
+    <div>
+        <input name="task-01" type="checkbox">
+        <label for="task-01">Tarefa 01</label>
+    </div>
+    <div>
+        <input name="task-02" type="checkbox">
+        <label for="task-02">Tarefa 01</label>
+    </div>
+    <div>
+        <input name="task-03" type="checkbox">
+        <label for="task-03">Tarefa 01</label>
+    </div>
+    <div>
+        <input name="task-04" type="checkbox">
+        <label for="task-04">Tarefa 01</label>
+    </div>
+    <div>
+        <input name="task-05" type="checkbox">
+        <label for="task-05">Tarefa 01</label>
+    </div>
+    <hr>
+
+    <form action="">
+        <input type="radio" name="genero">
+        <label for="genero">Feminino</label>
+        <input type="radio" name="genero">
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero">
+        <label for="genero">Não binário</label>
+    </form>
+
+    <hr>
+    <form action="">
+        <label for="">Sorvete - sabores</label>
+        <select name="sabor">
+            <option value="morando">Morango</option>
+            <option value="chocolate">chocolate</option>
+            <option value="morando">Uva</option>
+        </select>
+    </form>
+
+</body>
+</html>

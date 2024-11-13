@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIO CSS</title>
+    <style>
+        /* para mexer no input */
+        input:placeholder-shown{
+            border-color: royalblue;
+            background-color: blueviolet;
+        }
+        /* para mexer no elemento */
+        input::placeholder{
+            color: white
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes | :placeholder-shown</h1>
+
+    <form action="">
+        <label for="name">Nome completo</label>
+        <input type="name" type="text">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" type="email" placeholder="Digite um email válido">
+        <br>
+        <br>
+        <label for="age">Sua idade</label>
+        <input name="age" type="number" placeholder="Idade +18 anos de idade">
+    </form>
+</body>
+</html>
